@@ -19,7 +19,7 @@ const AnnouncementBar: React.FC = () => {
   );
 };
 
-// Central MEHRAAB Brand Mark — Royal Architectural Plaque Component
+// Central MEHRAAB Brand Mark — Architectural Header Extension (Rani Pink #B94D70)
 const MehraabCrest: React.FC = () => {
   return (
     <Link
@@ -27,46 +27,46 @@ const MehraabCrest: React.FC = () => {
       className="group relative flex flex-col items-center justify-start focus:outline-none"
       aria-label="MEHRAAB Royal Attar & Perfumes"
     >
-      {/* Desktop Architectural Center Plaque (>= 640px) */}
-      <div className="hidden sm:block relative w-[190px] xl:w-[200px] h-[148px] filter drop-shadow-[0_6px_14px_rgba(23,52,95,0.22)] transition-transform duration-300 group-hover:scale-[1.01]">
-        {/* SVG Architectural Palace Jharokha Silhouette */}
+      {/* Desktop Architectural Center Extension (>= 640px) */}
+      <div className="hidden sm:block relative w-[180px] xl:w-[190px] h-[118px] xl:h-[124px] transition-transform duration-300 group-hover:scale-[1.01]">
+        {/* SVG Architectural Palace Jharokha Silhouette connected to Navbar top */}
         <svg
-          viewBox="0 0 200 150"
+          viewBox="0 0 200 120"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="absolute inset-0 w-full h-full"
         >
-          {/* Main Plaque Fill — Deep Royal Blue #17345F */}
+          {/* Main Extension Fill — Rani Pink #B94D70 */}
           <path
             d="M 45 0 
                L 155 0 
-               C 168 0, 180 8, 184 20 
-               C 187 27, 188 35, 188 45 
-               L 188 92 
-               C 188 114, 168 128, 138 136 
-               C 120 141, 108 145, 100 150 
-               C 92 145, 80 141, 62 136 
-               C 32 128, 12 114, 12 92 
-               L 12 45 
-               C 12 35, 13 27, 16 20 
+               C 168 0, 180 8, 184 18 
+               C 187 24, 188 32, 188 42 
+               L 188 75 
+               C 188 94, 168 106, 138 112 
+               C 120 116, 108 118, 100 120 
+               C 92 118, 80 116, 62 112 
+               C 32 106, 12 94, 12 75 
+               L 12 42 
+               C 12 32, 13 24, 16 18 
                C 20 8, 32 0, 45 0 
                Z"
-            fill="#17345F"
+            fill="#B94D70"
           />
 
-          {/* Outer Antique Gold Architectural Outline #C49A52 */}
+          {/* Outer Antique Gold Inlay Outline #C49A52 */}
           <path
             d="M 45 0 
                L 155 0 
-               C 168 0, 180 8, 184 20 
-               C 187 27, 188 35, 188 45 
-               L 188 92 
-               C 188 114, 168 128, 138 136 
-               C 120 141, 108 145, 100 150 
-               C 92 145, 80 141, 62 136 
-               C 32 128, 12 114, 12 92 
-               L 12 45 
-               C 12 35, 13 27, 16 20 
+               C 168 0, 180 8, 184 18 
+               C 187 24, 188 32, 188 42 
+               L 188 75 
+               C 188 94, 168 106, 138 112 
+               C 120 116, 108 118, 100 120 
+               C 92 118, 80 116, 62 112 
+               C 32 106, 12 94, 12 75 
+               L 12 42 
+               C 12 32, 13 24, 16 18 
                C 20 8, 32 0, 45 0 
                Z"
             stroke="#C49A52"
@@ -78,54 +78,54 @@ const MehraabCrest: React.FC = () => {
           <path
             d="M 49 4 
                L 151 4 
-               C 162 4, 173 11, 177 22 
-               C 180 28, 181 35, 181 44 
-               L 181 89 
-               C 181 109, 163 122, 135 130 
-               C 118 135, 107 139, 100 143 
-               C 93 139, 82 135, 65 130 
-               C 37 122, 19 109, 19 89 
-               L 19 44 
-               C 19 35, 20 28, 23 22 
+               C 162 4, 173 11, 177 20 
+               C 180 26, 181 32, 181 41 
+               L 181 72 
+               C 181 89, 163 100, 135 106 
+               C 118 110, 107 112, 100 114 
+               C 93 112, 82 110, 65 106 
+               C 37 100, 19 89, 19 72 
+               L 19 41 
+               C 19 32, 20 26, 23 20 
                C 27 11, 38 4, 49 4 
                Z"
             stroke="#C49A52"
             strokeWidth="0.75"
-            strokeOpacity="0.5"
+            strokeOpacity="0.55"
             fill="none"
           />
         </svg>
 
-        {/* Plaque Content Overlay */}
-        <div className="absolute inset-0 pt-3.5 pb-3 px-4 flex flex-col items-center justify-start text-center z-10 pointer-events-none">
+        {/* Extension Content Overlay */}
+        <div className="absolute inset-0 pt-3 pb-2 px-3 flex flex-col items-center justify-start text-center z-10 pointer-events-none">
           {/* Top Royal Star Motif */}
-          <svg className="w-3.5 h-3.5 text-[#C49A52] mb-1.5" viewBox="0 0 24 24" fill="currentColor">
+          <svg className="w-3.5 h-3.5 text-[#C49A52] mb-1" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 0L14.2 9.8L24 12L14.2 14.2L12 24L9.8 14.2L0 12L9.8 9.8L12 0Z" />
           </svg>
 
           {/* MEHRAAB Wordmark */}
-          <span className="font-serif text-[20px] xl:text-[21px] tracking-[0.26em] font-light text-[#F8F1E7] uppercase leading-tight select-none">
+          <span className="font-serif text-[19px] xl:text-[20px] tracking-[0.26em] font-light text-[#F8F1E7] uppercase leading-tight select-none">
             MEHRAAB
           </span>
 
           {/* Subtitle Divider Line */}
           <div className="flex items-center space-x-1.5 my-1 opacity-90">
-            <span className="h-[0.75px] w-4 bg-[#C49A52]/60"></span>
+            <span className="h-[0.75px] w-4 bg-[#C49A52]/70"></span>
             <span className="text-[#C49A52] text-[6.5px] leading-none">✦</span>
-            <span className="h-[0.75px] w-4 bg-[#C49A52]/60"></span>
+            <span className="h-[0.75px] w-4 bg-[#C49A52]/70"></span>
           </div>
 
           {/* Subtitle */}
-          <span className="text-[7.5px] tracking-[0.28em] font-sans font-medium text-[#C49A52] uppercase select-none">
+          <span className="text-[7px] xl:text-[7.5px] tracking-[0.26em] font-sans font-medium text-[#C49A52] uppercase select-none">
             ROYAL ATTAR &amp; PERFUMES
           </span>
         </div>
       </div>
 
-      {/* Mobile Architectural Center Plaque (< 640px) */}
-      <div className="sm:hidden relative w-[130px] min-[360px]:w-[140px] h-[104px] min-[360px]:h-[110px] filter drop-shadow-[0_4px_10px_rgba(23,52,95,0.2)]">
+      {/* Mobile Architectural Center Extension (< 640px) */}
+      <div className="sm:hidden relative w-[125px] min-[360px]:w-[135px] h-[88px] min-[360px]:h-[94px]">
         <svg
-          viewBox="0 0 140 108"
+          viewBox="0 0 140 92"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="absolute inset-0 w-full h-full"
@@ -133,32 +133,32 @@ const MehraabCrest: React.FC = () => {
           <path
             d="M 32 0 
                L 108 0 
-               C 117 0, 126 6, 129 14 
-               C 131 19, 132 25, 132 32 
-               L 132 66 
-               C 132 82, 118 92, 97 98 
-               C 84 102, 76 105, 70 108 
-               C 64 105, 56 102, 43 98 
-               C 22 92, 8 82, 8 66 
-               L 8 32 
-               C 8 25, 9 19, 11 14 
-               C 14 6, 23 0, 32 0 
+               C 117 0, 126 5, 129 12 
+               C 131 16, 132 22, 132 29 
+               L 132 58 
+               C 132 72, 118 80, 97 85 
+               C 84 88, 76 90, 70 92 
+               C 64 90, 56 88, 43 85 
+               C 22 80, 8 72, 8 58 
+               L 8 29 
+               C 8 22, 9 16, 11 12 
+               C 14 5, 23 0, 32 0 
                Z"
-            fill="#17345F"
+            fill="#B94D70"
           />
           <path
             d="M 32 0 
                L 108 0 
-               C 117 0, 126 6, 129 14 
-               C 131 19, 132 25, 132 32 
-               L 132 66 
-               C 132 82, 118 92, 97 98 
-               C 84 102, 76 105, 70 108 
-               C 64 105, 56 102, 43 98 
-               C 22 92, 8 82, 8 66 
-               L 8 32 
-               C 8 25, 9 19, 11 14 
-               C 14 6, 23 0, 32 0 
+               C 117 0, 126 5, 129 12 
+               C 131 16, 132 22, 132 29 
+               L 132 58 
+               C 132 72, 118 80, 97 85 
+               C 84 88, 76 90, 70 92 
+               C 64 90, 56 88, 43 85 
+               C 22 80, 8 72, 8 58 
+               L 8 29 
+               C 8 22, 9 16, 11 12 
+               C 14 5, 23 0, 32 0 
                Z"
             stroke="#C49A52"
             strokeWidth="1"
@@ -167,16 +167,16 @@ const MehraabCrest: React.FC = () => {
           <path
             d="M 35 3 
                L 105 3 
-               C 113 3, 121 8, 124 15 
-               C 126 20, 127 25, 127 32 
-               L 127 64 
-               C 127 78, 114 87, 94 93 
-               C 82 96, 75 99, 70 102 
-               C 65 99, 58 96, 46 93 
-               C 26 87, 13 78, 13 64 
-               L 13 32 
-               C 13 25, 14 20, 16 15 
-               C 19 8, 27 3, 35 3 
+               C 113 3, 121 7, 124 13 
+               C 126 17, 127 22, 127 29 
+               L 127 56 
+               C 127 68, 114 76, 94 81 
+               C 82 84, 75 86, 70 88 
+               C 65 86, 58 84, 46 81 
+               C 26 76, 13 68, 13 56 
+               L 13 29 
+               C 13 22, 14 17, 16 13 
+               C 19 7, 27 3, 35 3 
                Z"
             stroke="#C49A52"
             strokeWidth="0.6"
@@ -185,22 +185,22 @@ const MehraabCrest: React.FC = () => {
           />
         </svg>
 
-        <div className="absolute inset-0 pt-2.5 px-2 flex flex-col items-center justify-start text-center z-10 pointer-events-none">
+        <div className="absolute inset-0 pt-2 px-2 flex flex-col items-center justify-start text-center z-10 pointer-events-none">
           <svg className="w-2.5 h-2.5 text-[#C49A52] mb-0.5" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 0L14.2 9.8L24 12L14.2 14.2L12 24L9.8 14.2L0 12L9.8 9.8L12 0Z" />
           </svg>
 
-          <span className="font-serif text-[14px] min-[360px]:text-[15px] tracking-[0.22em] font-light text-[#F8F1E7] uppercase leading-tight select-none">
+          <span className="font-serif text-[13.5px] min-[360px]:text-[14.5px] tracking-[0.22em] font-light text-[#F8F1E7] uppercase leading-tight select-none">
             MEHRAAB
           </span>
 
           <div className="flex items-center space-x-1 my-0.5">
-            <span className="h-[0.5px] w-3 bg-[#C49A52]/60"></span>
+            <span className="h-[0.5px] w-3 bg-[#C49A52]/70"></span>
             <span className="text-[#C49A52] text-[5.5px]">✦</span>
-            <span className="h-[0.5px] w-3 bg-[#C49A52]/60"></span>
+            <span className="h-[0.5px] w-3 bg-[#C49A52]/70"></span>
           </div>
 
-          <span className="text-[6px] min-[360px]:text-[6.5px] tracking-[0.2em] font-sans font-medium text-[#C49A52] uppercase select-none">
+          <span className="text-[5.8px] min-[360px]:text-[6.2px] tracking-[0.18em] font-sans font-medium text-[#C49A52] uppercase select-none">
             ROYAL ATTAR &amp; PERFUMES
           </span>
         </div>
@@ -229,7 +229,7 @@ export const Header: React.FC = () => {
     return null;
   }
 
-  // Active link helper with Soft Rani Pink background theme
+  // Active link helper with Baby Pink (#F8DDE5) navbar and Rani Pink (#B94D70) active accents
   const getLinkClass = (path: string) => {
     const isActive = pathname === path;
     return `relative py-1 transition-colors duration-200 hover:text-[#B94D70] ${
@@ -244,13 +244,13 @@ export const Header: React.FC = () => {
       {/* Layer 01 — Announcement Bar */}
       <AnnouncementBar />
 
-      {/* Layer 02 — Main Soft Rani Pink Navbar (#F6DDE3) */}
+      {/* Layer 02 — Main Baby Pink Navbar (#F8DDE5) */}
       <nav
-        className={`bg-[#F6DDE3] border-b border-[#C49A52]/30 text-[#17345F] transition-all duration-300 ${
+        className={`bg-[#F8DDE5] border-b border-[#C49A52]/30 text-[#17345F] transition-all duration-300 ${
           isScrolled ? "shadow-md py-0" : "py-0"
         }`}
       >
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-[78px] sm:h-[86px] flex items-center justify-between relative">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-[74px] sm:h-[80px] flex items-center justify-between relative">
           {/* Desktop Navigation Layout (>= 1024px) */}
           <div className="hidden lg:flex items-center justify-between w-full h-full">
             {/* Left Navigation Group */}
@@ -269,8 +269,8 @@ export const Header: React.FC = () => {
               </Link>
             </div>
 
-            {/* Reserved Center Spacer matching Architectural Plaque width */}
-            <div className="w-[190px] xl:w-[200px] flex-none h-full" aria-hidden="true" />
+            {/* Reserved Center Spacer matching Architectural Extension width */}
+            <div className="w-[180px] xl:w-[190px] flex-none h-full" aria-hidden="true" />
 
             {/* Right Navigation Group & Utility Icons */}
             <div className="flex-1 flex items-center justify-start pl-6 xl:pl-10 space-x-5 lg:space-x-6 xl:space-x-8">
@@ -390,16 +390,16 @@ export const Header: React.FC = () => {
             </div>
           </div>
 
-          {/* Central MEHRAAB Brand Mark (Architectural Plaque mounted over navbar) */}
+          {/* Central MEHRAAB Brand Mark (Seamlessly integrated Architectural Extension) */}
           <div className="absolute left-1/2 -translate-x-1/2 top-0 z-30 pointer-events-auto">
             <MehraabCrest />
           </div>
         </div>
       </nav>
 
-      {/* Refined Luxury Mobile Navigation Drawer (Soft Rani Pink Theme) */}
+      {/* Refined Luxury Mobile Navigation Drawer (Baby Pink #F8DDE5 Theme) */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-full bg-[#F6DDE3] border-b border-[#C49A52]/30 text-[#17345F] px-6 py-6 space-y-4 shadow-xl animate-in fade-in slide-in-from-top-2 duration-300">
+        <div className="lg:hidden fixed inset-x-0 top-full bg-[#F8DDE5] border-b border-[#C49A52]/30 text-[#17345F] px-6 py-6 space-y-4 shadow-xl animate-in fade-in slide-in-from-top-2 duration-300">
           <nav className="flex flex-col space-y-1 divide-y divide-[#C49A52]/20 text-xs tracking-[0.22em] uppercase font-medium">
             <Link
               href="/"
