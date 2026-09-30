@@ -108,7 +108,7 @@ const MehraabCrest: React.FC = () => {
       </div>
 
       {/* Mobile Crest (< 640px) */}
-      <div className="sm:hidden relative w-[155px] h-[98px] filter drop-shadow-[0_4px_8px_rgba(23,52,95,0.18)]">
+      <div className="sm:hidden relative w-[135px] min-[360px]:w-[155px] h-[88px] min-[360px]:h-[98px] filter drop-shadow-[0_4px_8px_rgba(23,52,95,0.18)]">
         <svg
           viewBox="0 0 155 98"
           fill="none"
