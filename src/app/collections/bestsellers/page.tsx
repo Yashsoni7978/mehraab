@@ -1,0 +1,46 @@
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { PRODUCTS } from "@/data/products";
+import { ProductCard } from "@/components/ProductCard";
+
+export default function BestsellersPage() {
+  const bestsellers = PRODUCTS.filter((p) => p.isBestseller || p.rating >= 4.8);
+
+  return (
+    <div className="bg-[#F8F1E7] min-h-screen text-[#17345F]">
+      {/* Hero */}
+      <section className="pt-32 pb-16 px-6 sm:px-10 lg:px-12 bg-[#FFF9F1] border-b border-[#C49A52]/25 text-center space-y-4">
+        <span className="text-[10px] sm:text-[11px] tracking-[0.35em] text-[#C49A52] uppercase font-mono block">
+          MOST CHERISHED EDITIONS
+        </span>
+        <h1 className="font-serif text-4xl sm:text-6xl font-light text-[#17345F]">
+          ROYAL BESTSELLERS
+        </h1>
+        <p className="text-xs sm:text-sm text-[#756B63] max-w-xl mx-auto font-light leading-relaxed">
+          The most acclaimed attars, eau de parfums, and agarwood decanters chosen by our royal fragrance patrons.
+        </p>
+      </section>
+
+      {/* Product Grid */}
+      <section className="py-16 max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 space-y-8">
+        <div className="flex items-center justify-between">
+          <span className="text-xs font-mono tracking-[0.2em] text-[#C49A52] uppercase">
+            {bestsellers.length} CHERISHED CREATIONS
+          </span>
+          <Link href="/shop" className="text-xs font-mono tracking-[0.2em] text-[#17345F] hover:text-[#C49A52]">
+            VIEW ALL SHOP →
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
+          {bestsellers.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
