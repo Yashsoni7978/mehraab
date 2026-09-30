@@ -36,29 +36,28 @@ const MehraabCrest: React.FC = () => {
           xmlns="http://www.w3.org/2000/svg"
           className="absolute inset-0 w-full h-full"
         >
-          {/* Main Extension Fill — Rani Pink #B94D70 (Flushes with AnnouncementBar at y=0) */}
+          {/* Main Extension Fill — Rani Pink #B94D70 (Flushes seamlessly with AnnouncementBar at y=0) */}
           <path
-            d="M 12 0 
-               L 188 0 
-               C 195 0, 197 10, 197 22 
+            d="M 0 0 
+               L 200 0 
+               L 197 22 
                L 197 45 
                C 197 70, 160 88, 100 98 
                C 40 88, 3 70, 3 45 
                L 3 22 
-               C 3 10, 5 0, 12 0 
                Z"
             fill="#B94D70"
           />
 
           {/* Outer Antique Gold Inlay Outline #C49A52 (Sides & Bottom ONLY — open at y=0 to merge) */}
           <path
-            d="M 12 0 
-               C 5 0, 3 10, 3 22 
+            d="M 0 0 
+               L 3 22 
                L 3 45 
                C 3 70, 40 88, 100 98 
                C 160 88, 197 70, 197 45 
                L 197 22 
-               C 197 10, 195 0, 188 0"
+               L 200 0"
             stroke="#C49A52"
             strokeWidth="1.2"
             fill="none"
@@ -66,13 +65,13 @@ const MehraabCrest: React.FC = () => {
 
           {/* Inner Decorative Antique Gold Inset Arch Pin-stripe (Sides & Bottom ONLY) */}
           <path
-            d="M 17 0 
-               C 11 0, 8 11, 8 24 
+            d="M 5 0 
+               L 8 24 
                L 8 43 
                C 8 65, 42 82, 100 91 
                C 158 82, 192 65, 192 43 
                L 192 24 
-               C 192 11, 189 0, 183 0"
+               L 195 0"
             stroke="#C49A52"
             strokeWidth="0.75"
             strokeOpacity="0.55"
@@ -115,37 +114,36 @@ const MehraabCrest: React.FC = () => {
           className="absolute inset-0 w-full h-full"
         >
           <path
-            d="M 10 0 
-               L 130 0 
-               C 135 0, 137 8, 137 18 
+            d="M 0 0 
+               L 140 0 
+               L 137 18 
                L 137 36 
                C 137 54, 112 69, 70 76 
                C 28 69, 3 54, 3 36 
                L 3 18 
-               C 3 8, 5 0, 10 0 
                Z"
             fill="#B94D70"
           />
           <path
-            d="M 10 0 
-               C 5 0, 3 8, 3 18 
+            d="M 0 0 
+               L 3 18 
                L 3 36 
                C 3 54, 28 69, 70 76 
                C 112 69, 137 54, 137 36 
                L 137 18 
-               C 137 8, 135 0, 130 0"
+               L 140 0"
             stroke="#C49A52"
             strokeWidth="1"
             fill="none"
           />
           <path
-            d="M 14 0 
-               C 9 0, 7 9, 7 20 
+            d="M 4 0 
+               L 7 20 
                L 7 34 
                C 7 50, 29 64, 70 70 
                C 111 64, 133 50, 133 34 
                L 133 20 
-               C 133 9, 131 0, 126 0"
+               L 136 0"
             stroke="#C49A52"
             strokeWidth="0.6"
             strokeOpacity="0.5"
