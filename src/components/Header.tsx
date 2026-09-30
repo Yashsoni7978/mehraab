@@ -6,13 +6,13 @@ import { usePathname } from "next/navigation";
 import { Search, Heart, ShoppingBag, Menu, X, User, ChevronRight } from "lucide-react";
 import { useShop } from "@/context/ShopContext";
 
-// Layer 01 — Announcement Bar Component
+// Layer 01 — Announcement Bar Component (Rani Pink #B94D70)
 const AnnouncementBar: React.FC = () => {
   return (
-    <div className="bg-[#17345F] border-b border-[#C49A52]/40 text-[#F8F1E7] text-[9.5px] sm:text-[10.5px] tracking-[0.25em] font-light uppercase py-2 px-4 flex items-center justify-center select-none z-20 relative min-h-[32px]">
+    <div className="bg-[#B94D70] text-[#F8F1E7] text-[9.5px] sm:text-[10.5px] tracking-[0.25em] font-light uppercase py-2 px-4 flex items-center justify-center select-none z-20 relative min-h-[32px]">
       <span className="flex items-center space-x-2 text-center">
         <span>FREE SHIPPING ON ORDERS ABOVE ₹2000</span>
-        <span className="text-[#C49A52] opacity-80 font-normal">|</span>
+        <span className="text-[#C49A52] opacity-90 font-normal">|</span>
         <span>WE SHIP WORLDWIDE</span>
       </span>
     </div>
