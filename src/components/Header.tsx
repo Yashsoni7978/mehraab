@@ -28,67 +28,51 @@ const MehraabCrest: React.FC = () => {
       aria-label="MEHRAAB Royal Attar & Perfumes"
     >
       {/* Desktop Architectural Center Extension (>= 640px) */}
-      <div className="hidden sm:block relative w-[180px] xl:w-[190px] h-[118px] xl:h-[124px] transition-transform duration-300 group-hover:scale-[1.01]">
-        {/* SVG Architectural Palace Jharokha Silhouette connected to Navbar top */}
+      <div className="hidden sm:block relative w-[165px] xl:w-[175px] h-[92px] xl:h-[98px] transition-transform duration-300 group-hover:scale-[1.01]">
+        {/* SVG Architectural Palace Silhouette merged into upper AnnouncementBar */}
         <svg
-          viewBox="0 0 200 120"
+          viewBox="0 0 200 100"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="absolute inset-0 w-full h-full"
         >
-          {/* Main Extension Fill — Rani Pink #B94D70 */}
+          {/* Main Extension Fill — Rani Pink #B94D70 (Flushes with AnnouncementBar at y=0) */}
           <path
-            d="M 45 0 
-               L 155 0 
-               C 168 0, 180 8, 184 18 
-               C 187 24, 188 32, 188 42 
-               L 188 75 
-               C 188 94, 168 106, 138 112 
-               C 120 116, 108 118, 100 120 
-               C 92 118, 80 116, 62 112 
-               C 32 106, 12 94, 12 75 
-               L 12 42 
-               C 12 32, 13 24, 16 18 
-               C 20 8, 32 0, 45 0 
+            d="M 12 0 
+               L 188 0 
+               C 195 0, 197 10, 197 22 
+               L 197 45 
+               C 197 70, 160 88, 100 98 
+               C 40 88, 3 70, 3 45 
+               L 3 22 
+               C 3 10, 5 0, 12 0 
                Z"
             fill="#B94D70"
           />
 
-          {/* Outer Antique Gold Inlay Outline #C49A52 */}
+          {/* Outer Antique Gold Inlay Outline #C49A52 (Sides & Bottom ONLY — open at y=0 to merge) */}
           <path
-            d="M 45 0 
-               L 155 0 
-               C 168 0, 180 8, 184 18 
-               C 187 24, 188 32, 188 42 
-               L 188 75 
-               C 188 94, 168 106, 138 112 
-               C 120 116, 108 118, 100 120 
-               C 92 118, 80 116, 62 112 
-               C 32 106, 12 94, 12 75 
-               L 12 42 
-               C 12 32, 13 24, 16 18 
-               C 20 8, 32 0, 45 0 
-               Z"
+            d="M 12 0 
+               C 5 0, 3 10, 3 22 
+               L 3 45 
+               C 3 70, 40 88, 100 98 
+               C 160 88, 197 70, 197 45 
+               L 197 22 
+               C 197 10, 195 0, 188 0"
             stroke="#C49A52"
             strokeWidth="1.2"
             fill="none"
           />
 
-          {/* Inner Decorative Antique Gold Inset Arch Pin-stripe */}
+          {/* Inner Decorative Antique Gold Inset Arch Pin-stripe (Sides & Bottom ONLY) */}
           <path
-            d="M 49 4 
-               L 151 4 
-               C 162 4, 173 11, 177 20 
-               C 180 26, 181 32, 181 41 
-               L 181 72 
-               C 181 89, 163 100, 135 106 
-               C 118 110, 107 112, 100 114 
-               C 93 112, 82 110, 65 106 
-               C 37 100, 19 89, 19 72 
-               L 19 41 
-               C 19 32, 20 26, 23 20 
-               C 27 11, 38 4, 49 4 
-               Z"
+            d="M 17 0 
+               C 11 0, 8 11, 8 24 
+               L 8 43 
+               C 8 65, 42 82, 100 91 
+               C 158 82, 192 65, 192 43 
+               L 192 24 
+               C 192 11, 189 0, 183 0"
             stroke="#C49A52"
             strokeWidth="0.75"
             strokeOpacity="0.55"
@@ -97,87 +81,71 @@ const MehraabCrest: React.FC = () => {
         </svg>
 
         {/* Extension Content Overlay */}
-        <div className="absolute inset-0 pt-3 pb-2 px-3 flex flex-col items-center justify-start text-center z-10 pointer-events-none">
+        <div className="absolute inset-0 pt-2 pb-1.5 px-3 flex flex-col items-center justify-start text-center z-10 pointer-events-none">
           {/* Top Royal Star Motif */}
-          <svg className="w-3.5 h-3.5 text-[#C49A52] mb-1" viewBox="0 0 24 24" fill="currentColor">
+          <svg className="w-3 h-3 text-[#C49A52] mb-0.5" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 0L14.2 9.8L24 12L14.2 14.2L12 24L9.8 14.2L0 12L9.8 9.8L12 0Z" />
           </svg>
 
           {/* MEHRAAB Wordmark */}
-          <span className="font-serif text-[19px] xl:text-[20px] tracking-[0.26em] font-light text-[#F8F1E7] uppercase leading-tight select-none">
+          <span className="font-serif text-[17px] xl:text-[18px] tracking-[0.24em] font-light text-[#F8F1E7] uppercase leading-tight select-none">
             MEHRAAB
           </span>
 
           {/* Subtitle Divider Line */}
-          <div className="flex items-center space-x-1.5 my-1 opacity-90">
-            <span className="h-[0.75px] w-4 bg-[#C49A52]/70"></span>
-            <span className="text-[#C49A52] text-[6.5px] leading-none">✦</span>
-            <span className="h-[0.75px] w-4 bg-[#C49A52]/70"></span>
+          <div className="flex items-center space-x-1.5 my-0.5 opacity-90">
+            <span className="h-[0.75px] w-3.5 bg-[#C49A52]/70"></span>
+            <span className="text-[#C49A52] text-[6px] leading-none">✦</span>
+            <span className="h-[0.75px] w-3.5 bg-[#C49A52]/70"></span>
           </div>
 
           {/* Subtitle */}
-          <span className="text-[7px] xl:text-[7.5px] tracking-[0.26em] font-sans font-medium text-[#C49A52] uppercase select-none">
+          <span className="text-[6.5px] xl:text-[7px] tracking-[0.24em] font-sans font-medium text-[#C49A52] uppercase select-none">
             ROYAL ATTAR &amp; PERFUMES
           </span>
         </div>
       </div>
 
       {/* Mobile Architectural Center Extension (< 640px) */}
-      <div className="sm:hidden relative w-[125px] min-[360px]:w-[135px] h-[88px] min-[360px]:h-[94px]">
+      <div className="sm:hidden relative w-[118px] min-[360px]:w-[124px] h-[70px] min-[360px]:h-[74px]">
         <svg
-          viewBox="0 0 140 92"
+          viewBox="0 0 140 76"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="absolute inset-0 w-full h-full"
         >
           <path
-            d="M 32 0 
-               L 108 0 
-               C 117 0, 126 5, 129 12 
-               C 131 16, 132 22, 132 29 
-               L 132 58 
-               C 132 72, 118 80, 97 85 
-               C 84 88, 76 90, 70 92 
-               C 64 90, 56 88, 43 85 
-               C 22 80, 8 72, 8 58 
-               L 8 29 
-               C 8 22, 9 16, 11 12 
-               C 14 5, 23 0, 32 0 
+            d="M 10 0 
+               L 130 0 
+               C 135 0, 137 8, 137 18 
+               L 137 36 
+               C 137 54, 112 69, 70 76 
+               C 28 69, 3 54, 3 36 
+               L 3 18 
+               C 3 8, 5 0, 10 0 
                Z"
             fill="#B94D70"
           />
           <path
-            d="M 32 0 
-               L 108 0 
-               C 117 0, 126 5, 129 12 
-               C 131 16, 132 22, 132 29 
-               L 132 58 
-               C 132 72, 118 80, 97 85 
-               C 84 88, 76 90, 70 92 
-               C 64 90, 56 88, 43 85 
-               C 22 80, 8 72, 8 58 
-               L 8 29 
-               C 8 22, 9 16, 11 12 
-               C 14 5, 23 0, 32 0 
-               Z"
+            d="M 10 0 
+               C 5 0, 3 8, 3 18 
+               L 3 36 
+               C 3 54, 28 69, 70 76 
+               C 112 69, 137 54, 137 36 
+               L 137 18 
+               C 137 8, 135 0, 130 0"
             stroke="#C49A52"
             strokeWidth="1"
             fill="none"
           />
           <path
-            d="M 35 3 
-               L 105 3 
-               C 113 3, 121 7, 124 13 
-               C 126 17, 127 22, 127 29 
-               L 127 56 
-               C 127 68, 114 76, 94 81 
-               C 82 84, 75 86, 70 88 
-               C 65 86, 58 84, 46 81 
-               C 26 76, 13 68, 13 56 
-               L 13 29 
-               C 13 22, 14 17, 16 13 
-               C 19 7, 27 3, 35 3 
-               Z"
+            d="M 14 0 
+               C 9 0, 7 9, 7 20 
+               L 7 34 
+               C 7 50, 29 64, 70 70 
+               C 111 64, 133 50, 133 34 
+               L 133 20 
+               C 133 9, 131 0, 126 0"
             stroke="#C49A52"
             strokeWidth="0.6"
             strokeOpacity="0.5"
@@ -185,22 +153,22 @@ const MehraabCrest: React.FC = () => {
           />
         </svg>
 
-        <div className="absolute inset-0 pt-2 px-2 flex flex-col items-center justify-start text-center z-10 pointer-events-none">
+        <div className="absolute inset-0 pt-1.5 px-2 flex flex-col items-center justify-start text-center z-10 pointer-events-none">
           <svg className="w-2.5 h-2.5 text-[#C49A52] mb-0.5" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 0L14.2 9.8L24 12L14.2 14.2L12 24L9.8 14.2L0 12L9.8 9.8L12 0Z" />
           </svg>
 
-          <span className="font-serif text-[13.5px] min-[360px]:text-[14.5px] tracking-[0.22em] font-light text-[#F8F1E7] uppercase leading-tight select-none">
+          <span className="font-serif text-[12.5px] min-[360px]:text-[13.5px] tracking-[0.2em] font-light text-[#F8F1E7] uppercase leading-tight select-none">
             MEHRAAB
           </span>
 
           <div className="flex items-center space-x-1 my-0.5">
-            <span className="h-[0.5px] w-3 bg-[#C49A52]/70"></span>
-            <span className="text-[#C49A52] text-[5.5px]">✦</span>
-            <span className="h-[0.5px] w-3 bg-[#C49A52]/70"></span>
+            <span className="h-[0.5px] w-2.5 bg-[#C49A52]/70"></span>
+            <span className="text-[#C49A52] text-[5px]">✦</span>
+            <span className="h-[0.5px] w-2.5 bg-[#C49A52]/70"></span>
           </div>
 
-          <span className="text-[5.8px] min-[360px]:text-[6.2px] tracking-[0.18em] font-sans font-medium text-[#C49A52] uppercase select-none">
+          <span className="text-[5.5px] min-[360px]:text-[5.8px] tracking-[0.16em] font-sans font-medium text-[#C49A52] uppercase select-none">
             ROYAL ATTAR &amp; PERFUMES
           </span>
         </div>
@@ -250,7 +218,7 @@ export const Header: React.FC = () => {
           isScrolled ? "shadow-md py-0" : "py-0"
         }`}
       >
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-[74px] sm:h-[80px] flex items-center justify-between relative">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-[52px] sm:h-[58px] flex items-center justify-between relative">
           {/* Desktop Navigation Layout (>= 1024px) */}
           <div className="hidden lg:flex items-center justify-between w-full h-full">
             {/* Left Navigation Group */}
@@ -270,7 +238,7 @@ export const Header: React.FC = () => {
             </div>
 
             {/* Reserved Center Spacer matching Architectural Extension width */}
-            <div className="w-[180px] xl:w-[190px] flex-none h-full" aria-hidden="true" />
+            <div className="w-[165px] xl:w-[175px] flex-none h-full" aria-hidden="true" />
 
             {/* Right Navigation Group & Utility Icons */}
             <div className="flex-1 flex items-center justify-start pl-6 xl:pl-10 space-x-5 lg:space-x-6 xl:space-x-8">
