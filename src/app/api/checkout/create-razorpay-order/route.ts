@@ -1,9 +1,18 @@
 import { NextResponse } from 'next/server';
 import crypto from 'crypto';
+import { DB } from '@/lib/store';
 
 export async function POST(request: Request) {
   try {
-    const { amount, currency = 'INR', receipt, notes } = await request.json();
+    const { amount: clientAmount, currency = 'INR', receipt, notes } = await request.json();
+
+    let amount = clientAmount;
+    if (notes && notes.orderId) {
+      const dbOrder = DB.getOrders().find(o => o.id === notes.orderId || o.orderNumber === notes.orderId);
+      if (dbOrder && dbOrder.totalAmount) {
+        amount = dbOrder.totalAmount;
+      }
+    }
 
     if (!amount || amount <= 0) {
       return NextResponse.json({ success: false, message: 'Invalid order amount' }, { status: 400 });
